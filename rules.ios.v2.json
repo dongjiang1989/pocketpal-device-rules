@@ -2,8 +2,8 @@
   "$schema": "https://raw.githubusercontent.com/a-ghorbani/pocketpal-device-rules/main/schema/rules.v2.schema.json",
   "schema_version": "2.0.0",
   "platform": "ios",
-  "rules_version": "2026-09-24.1",
-  "updated_at": "2026-09-24T00:00:00Z",
+  "rules_version": "2026-10-28.1",
+  "updated_at": "2026-10-28T00:00:00Z",
   "_status": "v1-partial-measured",
   "_quant_policy": "Q4_K_M is primary for Q4 family on Metal (no Q4_0 fastpath like Android Hex). Metal HAS a Q1_0 fastpath that Android lacks — Bonsai variants are real speed+footprint plays on iOS.",
   "_selection_policy": {
@@ -361,7 +361,7 @@
       ]
     },
     "mid": {
-      "description": "7 candidate(s); primary: smollm3-3b. Validated against community benchmarks.",
+      "description": "8 candidate(s); primary: smollm3-3b. Validated against community benchmarks.",
       "candidates": [
         {
           "model": "smollm3-3b",
@@ -453,11 +453,23 @@
           "min_ram_gb": 2.1,
           "obs_tg": 25.5,
           "min_app_version": "1.17.3"
+        },
+        {
+          "model": "spark-x2.6-1.7b",
+          "display_name": "Spark-X2.6 1.7B",
+          "quant": "q4_k_m",
+          "hf_repo": "XHToken/Spark-X2.6-1.7B-GGUF",
+          "hf_filename": "Spark-X2.6-1.7B-Q4_K_M.gguf",
+          "params": 1707657216,
+          "size_bytes": 1768720512,
+          "sha256": "7abd9859c10924be3c583945456fa9b25d0569484876105a7b7376f7938fffb7",
+          "min_ram_gb": 2.8,
+          "min_app_version": "1.17.3"
         }
       ]
     },
     "high": {
-      "description": "7 candidate(s); primary: gemma-3-4b. Validated against community benchmarks.",
+      "description": "8 candidate(s); primary: gemma-3-4b. Validated against community benchmarks.",
       "candidates": [
         {
           "model": "gemma-3-4b",
@@ -558,11 +570,23 @@
           "min_ram_gb": 2.1,
           "obs_tg": 24.1,
           "min_app_version": "1.17.3"
+        },
+        {
+          "model": "spark-x2.6-1.7b",
+          "display_name": "Spark-X2.6 1.7B",
+          "quant": "q4_k_m",
+          "hf_repo": "XHToken/Spark-X2.6-1.7B-GGUF",
+          "hf_filename": "Spark-X2.6-1.7B-Q4_K_M.gguf",
+          "params": 1707657216,
+          "size_bytes": 1768720512,
+          "sha256": "7abd9859c10924be3c583945456fa9b25d0569484876105a7b7376f7938fffb7",
+          "min_ram_gb": 2.8,
+          "min_app_version": "1.17.3"
         }
       ]
     },
     "flagship": {
-      "description": "7 candidate(s); primary: gemma-3-4b. Validated against community benchmarks.",
+      "description": "8 candidate(s); primary: gemma-3-4b. Validated against community benchmarks.",
       "candidates": [
         {
           "model": "gemma-3-4b",
@@ -662,6 +686,18 @@
           "size_bytes": 2600224352,
           "sha256": "adfcfa19a4ed6a5985da8bf565fe15f8e1a7e131d79bae2d19d48d1c40109428",
           "min_ram_gb": 3.8,
+          "min_app_version": "1.17.3"
+        },
+        {
+          "model": "spark-x2.6-4b",
+          "display_name": "Spark-X2.6 4B",
+          "quant": "q4_k_m",
+          "hf_repo": "XHToken/Spark-X2.6-4B-GGUF",
+          "hf_filename": "Spark-X2.6-4B-Q4_K_M.gguf",
+          "params": 4112079360,
+          "size_bytes": 3543441312,
+          "sha256": "91cb2811aebb47ac916aa619d27d4cdd7f4143106b7917accb8ead4cd7f5cbd9",
+          "min_ram_gb": 4.8,
           "min_app_version": "1.17.3"
         }
       ]
